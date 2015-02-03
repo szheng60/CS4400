@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rental10.ViewMaintenanceRequestController">
+   <children>
+      <Label id="titleLabel" fx:id="titleLabel" layoutX="371.0" layoutY="33.0" text="Label" />
+      <TableView fx:id="tableRequested" layoutX="51.0" layoutY="100.0" prefHeight="192.0" prefWidth="613.0">
+        <columns>
+          <TableColumn fx:id="dorRequested" editable="false" prefWidth="133.0" text="Date of Request" />
+          <TableColumn fx:id="aptRequested" editable="false" prefWidth="85.0" text="Apt No" />
+            <TableColumn fx:id="doiRequested" editable="false" prefWidth="298.0" text="Description of Issue" />
+            <TableColumn editable="false" prefWidth="96.0" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableResolved" layoutX="50.0" layoutY="331.0" prefHeight="217.0" prefWidth="613.0">
+        <columns>
+          <TableColumn fx:id="dorResolved" editable="false" prefWidth="134.0" text="Date of Request" />
+          <TableColumn fx:id="aptResolved" editable="false" prefWidth="73.0" text="Apt No" />
+            <TableColumn fx:id="doiResolved" editable="false" prefWidth="271.0" text="Description of Issue" />
+            <TableColumn fx:id="dateResolved" editable="false" prefWidth="134.0" text="Issue &#10;resolved on" />
+        </columns>
+      </TableView>
+      <Label layoutX="279.0" layoutY="299.0" text="Resolved Issues" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="681.0" layoutY="245.0" mnemonicParsing="false" onAction="#issueResolvedHandler" prefHeight="47.0" prefWidth="101.0" text="Resolved" />
+      <Button layoutX="676.0" layoutY="545.0" mnemonicParsing="false" onAction="#homeScreenHandler" prefHeight="47.0" prefWidth="101.0" text="Home" />
+      <Label fx:id="errormsg" layoutX="48.0" layoutY="553.0" prefHeight="36.0" prefWidth="613.0" textFill="#f20101">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+       <URL value="@general.css" />
+   </stylesheets>
+</AnchorPane>

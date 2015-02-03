@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rental10.ApplicationReviewController">
+   <children>
+      <Label id="titleLabel" fx:id="titleLabel" layoutX="383.0" layoutY="30.0" text="Label" />
+      <Button layoutX="535.0" layoutY="504.0" mnemonicParsing="false" onAction="#apartmentAllotmentScreenHandler" prefHeight="40.0" prefWidth="106.0" text="Next" />
+      <Button layoutX="654.0" layoutY="504.0" mnemonicParsing="false" onAction="#homeScreenHandler" prefHeight="40.0" prefWidth="106.0" text="Cancel" />
+      <Label fx:id="errormsg" layoutX="52.0" layoutY="498.0" prefHeight="91.0" prefWidth="385.0" textFill="#f20303" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <TableView fx:id="tableApplication" layoutX="2.0" layoutY="104.0" prefHeight="380.0" prefWidth="794.0">
+        <columns>
+          <TableColumn fx:id="nameCol" editable="false" prefWidth="88.0" text="Name" />
+          <TableColumn fx:id="dobCol" editable="false" prefWidth="89.0" text="Date of &#10;Birth" />
+            <TableColumn fx:id="genderCol" editable="false" prefWidth="68.0" text="Gender" />
+            <TableColumn fx:id="incomeCol" editable="false" prefWidth="72.0" text="Monthly &#10;Income" />
+            <TableColumn fx:id="aptRequestCol" editable="false" prefWidth="133.0" text="Type of &#10;Apartment&#10;Requested" />
+            <TableColumn fx:id="moveInDateCol" editable="false" prefWidth="125.0" text="Preferred&#10;Move-In &#10;Date" />
+            <TableColumn fx:id="termCol" editable="false" prefWidth="72.0" text="Lease &#10;Term" />
+            <TableColumn fx:id="raCol" editable="false" prefWidth="93.0" text="Reject/&#10;Accept" />
+            <TableColumn fx:id="actionCol" prefWidth="53.0" />
+        </columns>
+      </TableView>
+   </children>
+      <stylesheets>
+       <URL value="@general.css" />
+   </stylesheets>
+</AnchorPane>

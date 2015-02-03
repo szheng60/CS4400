@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rental10.NewApplicationFormController">
+   <stylesheets>
+       <URL value="@general.css" />
+   </stylesheets>
+    <children>
+      <Label id="titleLabel" fx:id="titleLabel" layoutX="348.0" layoutY="34.0" text="Label" />
+      <GridPane layoutX="48.0" layoutY="104.0" prefHeight="424.0" prefWidth="557.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="10.0" prefWidth="163.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="396.0" minWidth="10.0" prefWidth="390.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Name:" />
+            <Label text="Gender:" GridPane.rowIndex="1" />
+            <Label text="Date of Birth:" GridPane.rowIndex="2" />
+            <Label text="Monthly Income ($):" GridPane.rowIndex="3" />
+            <Label text="Category of Apartment" GridPane.rowIndex="4" />
+            <Label text="Monthly Rent($):" GridPane.rowIndex="5" />
+            <Label text="Preferred Move In Date:" GridPane.rowIndex="6" />
+            <Label text="Lease Term:" GridPane.rowIndex="7" />
+            <Label text="Prev Residence:" GridPane.rowIndex="8" />
+            <TextField id="residentName" fx:id="residentName" prefHeight="30.0" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="100.0" />
+               </GridPane.margin></TextField>
+            <TextField id="residentIncome" fx:id="residentIncome" prefHeight="30.0" prefWidth="285.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="200.0" />
+               </GridPane.margin></TextField>
+            <DatePicker id="residentDOB" fx:id="residentDOB" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <DatePicker id="residentPrefMoveInDate" fx:id="residentPrefMoveInDate" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <Label text="min:">
+                     <padding>
+                        <Insets left="5.0" right="5.0" top="14.0" />
+                     </padding>
+                  </Label>
+                  <ComboBox fx:id="residentMinRent" prefHeight="30.0" prefWidth="120.0" promptText="Select...">
+                     <HBox.margin>
+                        <Insets top="7.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <Label text="max:">
+                     <padding>
+                        <Insets left="5.0" right="5.0" top="14.0" />
+                     </padding>
+                  </Label>
+                  <ComboBox fx:id="residentMaxRent" prefHeight="30.0" prefWidth="120.0" promptText="Select...">
+                     <HBox.margin>
+                        <Insets top="7.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <ChoiceBox id="residentPrefLeaseTerm" fx:id="residentPrefLeaseTerm" prefHeight="30.0" prefWidth="72.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextArea id="residentPrevAddress" fx:id="residentPrevAddress" prefHeight="101.0" prefWidth="392.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <ChoiceBox id="residentGender" fx:id="residentGender" prefHeight="30.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Months" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="80.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox id="residentPrefAptCategory" fx:id="residentPrefAptCategory" prefHeight="30.0" prefWidth="199.0" promptText="Select a Category" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button layoutX="650.0" layoutY="484.0" mnemonicParsing="false" onAction="#homepageScreenHandler" prefHeight="45.0" prefWidth="111.0" text="Apply" />
+      <Label fx:id="errormsg" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="535.0" prefHeight="58.0" prefWidth="772.0" textAlignment="RIGHT" textFill="#eb0404">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+      <stylesheets>
+       <URL value="@general.css" />
+   </stylesheets>
+</AnchorPane>

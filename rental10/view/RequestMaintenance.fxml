@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rental10.RequestMaintenanceController">
+   <children>
+      <Label id="titleLabel" fx:id="titleLabel" layoutX="365.0" layoutY="29.0" text="Label" />
+      <Label layoutX="102.0" layoutY="232.0" text="Apartment No:" />
+      <Label layoutX="102.0" layoutY="312.0" text="Issue:" />
+      <Label layoutX="490.0" layoutY="145.0" text="Date of Request:" />
+      <Button layoutX="507.0" layoutY="464.0" mnemonicParsing="false" onAction="#homeScreenHandler" prefHeight="39.0" prefWidth="150.0" text="Submit Request" />
+      <TextField fx:id="rmAptNo" editable="false" layoutX="225.0" layoutY="227.0" prefHeight="31.0" prefWidth="159.0" />
+      <ComboBox fx:id="rmIssue" layoutX="225.0" layoutY="297.0" prefHeight="31.0" prefWidth="159.0" promptText="Select An Issue" />
+      <Label fx:id="rmDate" layoutX="615.0" layoutY="145.0" prefHeight="15.0" prefWidth="172.0" />
+      <Label fx:id="errormsg" layoutX="168.0" layoutY="427.0" prefHeight="86.0" prefWidth="327.0" textFill="#f50505" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="668.0" layoutY="464.0" mnemonicParsing="false" onAction="#homeScreenHandler1" prefHeight="39.0" prefWidth="110.0" text="Cancel" />
+   </children>
+    <stylesheets>
+       <URL value="@general.css" />
+   </stylesheets>
+</AnchorPane>

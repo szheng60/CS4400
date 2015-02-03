@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rental10.ApartmentAllotmentController">
+   <children>
+      <Label id="titleLabel" fx:id="titleLabel" layoutX="384.0" layoutY="26.0" text="Label" />
+      <Label layoutX="36.0" layoutY="110.0" text="Applicant Name:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="applicantName" layoutX="233.0" layoutY="111.0" prefHeight="15.0" prefWidth="195.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button layoutX="499.0" layoutY="513.0" mnemonicParsing="false" onAction="#homepageScreenHandler" prefHeight="51.0" prefWidth="172.0" text="Assign Apartment" />
+      <Label layoutX="271.0" layoutY="160.0" text="Apartment Availability" underline="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableApartment" layoutX="4.0" layoutY="204.0" prefHeight="279.0" prefWidth="794.0">
+        <columns>
+          <TableColumn fx:id="aptnocol" editable="false" prefWidth="121.0" text="Apartment No" />
+          <TableColumn fx:id="catcol" editable="false" prefWidth="168.0" text="Category" />
+            <TableColumn fx:id="rentcol" prefWidth="143.0" text="Monthly Rent" />
+            <TableColumn fx:id="sqftcol" prefWidth="117.0" text="Sq Ft." />
+            <TableColumn fx:id="availcol" prefWidth="174.0" text="Avalible from" />
+            <TableColumn fx:id="action" prefWidth="70.0" />
+        </columns>
+      </TableView>
+      <Label fx:id="errormsg" layoutX="46.0" layoutY="503.0" prefHeight="74.0" prefWidth="453.0" textFill="#ee0404" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="686.0" layoutY="513.0" mnemonicParsing="false" onAction="#homepageScreenHandler1" prefHeight="51.0" prefWidth="92.0" text="Cancel" />
+   </children> 
+   <stylesheets>
+       <URL value="@general.css" />
+   </stylesheets>
+</AnchorPane>

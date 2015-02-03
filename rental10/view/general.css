@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 9, 2014, 5:04:24 PM
+    Author     : song
+*/
+
+.root {
+    -fx-background-color: #ffffe0;
+}
+.button {
+    -fx-font-family: "Lucida Console",monospace;
+    -fx-border-color: #426ab7;
+    -fx-border-radius: 3px;
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 6,5,6,5;
+    -fx-text-fill: #000000;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.button Text {
+    -fx-effect: dropshadow( one-pass-box, rgba(0,0,0,0.8), 0, 0.0, 0, 1);
+}
+.button:hover {
+    -fx-background-color: 
+        linear-gradient(#2f4b8f, #7ebcea),
+        linear-gradient(#263e75, #426ab7),
+        linear-gradient(#223768, #395cab);
+    -fx-text-fill: #ff0000;
+}
+#titleLabel {
+    -fx-background-color: #33ff33;
+}
+
+

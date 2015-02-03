@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rental10.RentPaymentController">
+   <children>
+      <Label id="titleLabel" fx:id="titleLabel" layoutX="383.0" layoutY="25.0" text="Label" />
+      <Label layoutX="88.0" layoutY="153.0" text="Date:" />
+      <Label layoutX="88.0" layoutY="211.0" text="Apartment No:" />
+      <Label layoutX="88.0" layoutY="279.0" text="Rent for Month:" />
+      <Label layoutX="88.0" layoutY="349.0" text="Amount due:" />
+      <Label layoutX="88.0" layoutY="419.0" text="Use Card:" />
+      <ChoiceBox fx:id="rentPayUseCard" layoutX="250.0" layoutY="414.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="rentForMonth" layoutX="250.0" layoutY="274.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="rentForYear" layoutX="432.0" layoutY="274.0" prefWidth="150.0" />
+      <DatePicker fx:id="rentPayDate" layoutX="250.0" layoutY="148.0" onAction="#recalculateRentAmontHandler" prefHeight="31.0" prefWidth="150.0" />
+      <TextField fx:id="rentPayAptNo" editable="false" layoutX="250.0" layoutY="206.0" prefHeight="31.0" prefWidth="150.0" />
+      <Button layoutX="533.0" layoutY="499.0" mnemonicParsing="false" onAction="#homeScreenHandler" prefHeight="43.0" prefWidth="99.0" text="Pay" />
+      <Label fx:id="errormsg" layoutX="165.0" layoutY="464.0" prefHeight="93.0" prefWidth="335.0" textFill="#e40303" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <TextField fx:id="rentAmount" editable="false" layoutX="251.0" layoutY="344.0" prefHeight="31.0" prefWidth="150.0" />
+      <Button layoutX="652.0" layoutY="499.0" mnemonicParsing="false" onAction="#homeScreenHandler1" prefHeight="43.0" prefWidth="99.0" text="Cancel" />
+   </children>   
+   <stylesheets>
+       <URL value="@general.css" />
+   </stylesheets>
+</AnchorPane>

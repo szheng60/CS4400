@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rental10.ReminderController">
+   <children>
+      <Label id="titleLabel" fx:id="titleLabel" layoutX="383.0" layoutY="33.0" text="Label" />
+      <Label layoutX="85.0" layoutY="275.0" text="Message:">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="reminder" alignment="TOP_LEFT" layoutX="265.0" layoutY="281.0" prefHeight="90.0" prefWidth="312.0" text="Your payment is past due. &#10;Please pay immediately!" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="510.0" layoutY="126.0" text="Date: " underline="true">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button layoutX="574.0" layoutY="479.0" mnemonicParsing="false" onAction="#sendReminderHandler" prefHeight="39.0" prefWidth="87.0" text="Send" />
+      <ChoiceBox fx:id="aptNo" layoutX="265.0" layoutY="218.0" prefHeight="30.0" prefWidth="100.0" />
+      <Label fx:id="date" layoutX="583.0" layoutY="128.0" prefHeight="21.0" prefWidth="177.0" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="221.0" text="Apartment No:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="671.0" layoutY="479.0" mnemonicParsing="false" onAction="#homeScreenHandler1" prefHeight="39.0" prefWidth="87.0" text="cancel" />
+      <Label fx:id="errormsg" layoutX="60.0" layoutY="464.0" prefHeight="83.0" prefWidth="420.0" textFill="#f20101" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>  
+   <stylesheets>
+       <URL value="@general.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rental10.LeasingReportController">
+   <children>
+      <Label id="titleLabel" fx:id="titleLabel" layoutX="383.0" layoutY="31.0" text="Label" />
+      <Button layoutX="652.0" layoutY="530.0" mnemonicParsing="false" onAction="#homeScreenHandler" prefHeight="51.0" prefWidth="104.0" text="Home" />
+      <TableView fx:id="tableReport" layoutX="142.0" layoutY="98.0" prefHeight="417.0" prefWidth="511.0">
+        <columns>
+          <TableColumn fx:id="monthCol" editable="false" prefWidth="150.0" text="Month" />
+          <TableColumn fx:id="categoryCol" editable="false" prefWidth="219.0" text="Category" />
+            <TableColumn fx:id="aptsCol" editable="false" prefWidth="141.0" text="No. of Apartment" />
+        </columns>
+      </TableView>
+   </children>
+   <stylesheets>
+       <URL value="@general.css" />
+   </stylesheets>
+</AnchorPane>
